@@ -55,7 +55,7 @@ HANDLE WaitForMailSlot(string mailslot_name, DWORD timeout) {
 
 void SendKeyHandleToMailSlot(HCRYPTKEY key) {
   printf("Sending key over the MailSlot. Data size: %u\n", sizeof(HCRYPTKEY));
-  LPCSTR mailslot_name = "\\\\.\\mailslot\\KeyReaperServer";
+  LPCSTR mailslot_name = "\\\\.\\mailslot\\KeyExtractionServer";
 
   DWORD timeout = 10000;
   HANDLE mailslot = WaitForMailSlot(mailslot_name, timeout);
