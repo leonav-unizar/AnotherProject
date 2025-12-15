@@ -1,5 +1,5 @@
-#ifndef KEYREAPER_WIN_NT_HEAP_H
-#define KEYREAPER_WIN_NT_HEAP_H
+#ifndef CUSTOM_WIN_NT_HEAP_H
+#define CUSTOM_WIN_NT_HEAP_H
 
 #include <windows.h>
 
@@ -180,4 +180,4 @@ typedef struct _HEAP_SEGMENT {
 } HEAP_SEGMENT, *PHEAP_SEGMENT;
 
 } // namespace nt_heap
-#endif // KEYREAPER_WIN_NT_HEAP_H
+#endif // CUSTOM_WIN_NT_HEAP_H
